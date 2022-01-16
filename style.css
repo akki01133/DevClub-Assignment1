@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#home{
+    height: 100vh;
+    background-color: blueviolet;
+    margin: 0;
+    
+}
+.navbar{
+    width: 100vh;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin: 0;
+}
+
+.navbar ul{
+    list-style-type: none ;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li{
+    display: inline-block;
+}
+
+.navbar ul li a{
+    font-size: 20px;
+    text-decoration: none;
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-align: center;
+}
+
+.navbar ul li a:hover{
+    background-color: violet;
+}
+
+.secheading{
+    font-size: 40px;
+    padding-top: 40px ;
+    text-align: center;    color: rgb(85, 13, 57);
+}
+
+.sec1Info{
+    width: 50%;
+    margin-left: 10vh;
+    margin-top: 10vh;
+}
+
+.sec1Info h3{
+    font-size: 30px;
+    color: violet;
+}
+
+.sec1Info h2{
+    font-size: 42px;
+    color: tomato;
+}
+
+.homeimg{
+    height: 300px;
+    width: 300px;
+    float: right;
+}
+
+.tipsec2{
+    height: 100vh;
+    background-color: whitesmoke;
+}
+
+.tipcontainer{
+    width: 70%;
+    height: 40vh;
+    margin: 30px auto;
+    border: 1px solid red;
+    border-radius: 10px;
+}
+
+.tipcontainer img{
+    height: 300px;
+    width: 300px;
+    float: left;
+}
+.tipcontainer h2{
+    float: right;
+    text-align: center;    
+}
+
+
+.sympsec3{
+    width: auto;
+    height:80vh;
+    background-color: violet;
+}
+
+.sympsec3 table{
+    border: 1px solid black;
+    width: 60%;
+    margin : 0 auto;
+    border-collapse: collapse;
+}
+
+.sympsec3 th{
+    border: 5px solid black;
+    text-align: center;
+    height:  60px;
+    font-size: 25px;
+}
+
+.sympsec3 td{
+    border: 5px solid black;
+    text-align: center;
+    height: 60px;
+}
+
+.faqsec4{
+    height: 100vh;
+}
+
+.faqsec4 section{
+    width: 80%;
+    margin: 10px auto;
+    border: 1px solid violet;
+    border-radius: 5px;
+}
+.faqitem{
+    width: 90%;
+    margin: 30px auto;
+    border: 1px solid violet;
+    border-radius: 5px;
+}
+
+.faqitem h3{
+    text-align: center;
+    
+}
+
+.ytsec5{
+    height: 70vh;
+
+}
+.embedVideo{
+    width: fit-content;
+    margin: 30px auto;
+}
+
+footer{
+    height: 20vh;
+    background-color: violet;
+
+}
+
+footer p{
+    text-align: center;
+    font-size: 30px;
+    padding-top: 60px;
+}
