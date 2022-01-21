@@ -1,13 +1,20 @@
-body{
+*{
     margin: 0;
     padding: 0;
+}
+
+body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: blueviolet;
+    background-attachment: fixed;
+    background-size: 100vh;
 }
 
 #home{
     height: 100vh;
+    max-width: 180vh;
+    margin: 0px auto;
     background-color: blueviolet;
-    margin-bottom: 0px;
     position: relative;
 
 }
@@ -47,26 +54,27 @@ body{
     text-align: center;    color: rgb(85, 13, 57);
 }
 
-.sec1Info{
+.home-Info{
     width: 50%;
     margin-left: 10vh;
-    margin-top: 10vh;
+    margin-top: 6rem;
 }
 
-.sec1Info h3{
-    font-size: 30px;
+.home-Info h3{
+    font-size: 36px;
     color: violet;
 }
 
-.sec1Info h2{
-    font-size: 65px;
+.home-Info h2{
+    font-size: 68px;
     font-weight: bold;
     color: tomato;
+    margin-top: 2rem;
 }
 
 .homeimg{
-    height: 500px;
-    width: 500px;
+    max-width: 45vh;
+    max-height: 45vh;
     position: absolute;
     bottom: 10px;
     right: 12%;
@@ -84,6 +92,7 @@ body{
 
 .tipcontainer{
     width: 70%;
+    max-width: 100vh;
     height: 40vh;
     margin: 30px auto;
     border: 1px solid red;
