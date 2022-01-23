@@ -1,177 +1,254 @@
 *{
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    
 }
 
 body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: blueviolet;
-    background-attachment: fixed;
-    background-size: 100vh;
+    background-color: azure;
 }
 
-#home{
-    height: 100vh;
-    max-width: 180vh;
-    margin: 0px auto;
-    background-color: blueviolet;
+.home{
+    background-color:blueviolet ;
+    min-height: 100vh;
     position: relative;
-
 }
-.navbar{
+
+.topnav{
     width: 100%;
-    padding-top: 20px;
-    padding-left: 3%;
-    margin: 0;
 }
 
-.navbar ul{
-    list-style-type: none ;
-    margin: 0;
-    padding: 0;
+.topnav ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin: 0 6rem ;
 }
 
-.navbar ul li{
-    display: inline-block;
+.topnav ul li{
+    padding:3rem 2rem;
 }
-
-.navbar ul li a{
-    font-size: 25px;
+.topnav ul li a{
     text-decoration: none;
-    display: block;
-    padding: 15px 30px;
-    color: white;
-    text-align: center;
+    font-size: 1.5em;
+    display:inline-block;
+    color: #fff;
+    font-weight: 500;
 }
 
-.navbar ul li a:hover{
-    background-color: violet;
+
+
+.topnav ul li a:hover{
+    color:yellow;
 }
 
-.secheading{
-    font-size: 40px;
-    padding-top: 40px ;
-    text-align: center;    color: rgb(85, 13, 57);
+
+.home-content{  
+    max-width: max-content;
+    margin: 4rem auto 0 auto;
 }
 
-.home-Info{
-    width: 50%;
-    margin-left: 10vh;
-    margin-top: 6rem;
+.quote1{
+    max-width: 55rem;
 }
 
-.home-Info h3{
-    font-size: 36px;
-    color: violet;
+.quote1 h3{
+    font-size: 2rem;
+    font-weight: 900;
+    color:#071f70
 }
 
-.home-Info h2{
-    font-size: 68px;
-    font-weight: bold;
-    color: tomato;
-    margin-top: 2rem;
-}
 
-.homeimg{
-    max-width: 45vh;
-    max-height: 45vh;
-    position: absolute;
-    bottom: 10px;
-    right: 12%;
+.quote-and-image{
+    width:100%;
+    display:flex;
     
 }
 
-.tips{
-    height: 100vh;
-    background-color: whitesmoke;
+.quote2{
+    max-width:40rem;
+}
+.quote2 h2{
+    font-size: 4rem;
+    font-weight: 800;
+    color: rgb(65, 6, 33);
 }
 
-#Tips{
-    margin: 0;
+.covid-image-container{
+    box-sizing: border-box;
 }
 
-.tipcontainer{
-    width: 70%;
-    max-width: 100vh;
-    height: 40vh;
-    margin: 30px auto;
-    border: 1px solid red;
-    border-radius: 10px;
-    position: relative;
+.covid-image-container img{
+    max-width:25rem;
+    max-height: 25rem;
+    padding-left:  30px;
+    padding-top: 10px;
+}
+
+@media (max-width:1250px){
+    .home-content{
+        margin: 3.5rem 5rem 0rem 5rem;
+    }
+    .covid-image-container{
+        width: 100%;
+    }
+    .covid-image-container img{
+        padding:0;
+        float: right;
+        margin-right: 1rem;
+    }
+    .quote-and-image{
+      flex-wrap: wrap;  
+    }
+    .topnav ul{
+        margin-left: 4.2rem;
+    }
+    .topnav ul li{
+        padding:3rem 1rem 3rem 0.8rem ;
+    }
+    .topnav ul li a{
+        font-size: 1.7rem;
+    }
+}
+
+.tip-container{
+    background-color: azure;
+
+}
+
+
+.tip{
+    border: 2px solid red;
+    border-radius: 4px;
+    padding-top:2rem;
+    padding-bottom:2rem;
+    max-width: 80%;
+    margin:3rem auto;
+
+}
+
+.tip-image, .tip-image2{
     display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
-.img-col img{
-    height: 300px;
-    width: 300px;
-
-}
-.text-col h2{
-    text-align: center;    
+.tip-image img, .tip-image2 img{
+    height: 350px;
+    width: 350px;
+    margin: auto;
 }
 
+.tip-text, .tip-text2{
+    text-align: center;
+    flex:1;
+    font-size:1.3rem;
+}
 
-.sympsec3{
+.caption{
+    margin: auto;
+}
+
+.heading{
+    text-align: center;
+    font-size:2rem;
+}
+
+.heading h2{
+    padding:2rem;
+}
+
+@media (min-width:900px){
+    .tip{
+        display: flex;
+        justify-content: center;
+        margin:3.5rem auto;
+    }
+
+    .tip-text, .tip-text2{
+        margin: auto;
+        flex:1;
+    }
+    .tip-image,.tip-image2{
+        flex:1;
+    }
+    .tip-text2{
+        order: 1;
+    }
+    .tip-image2{
+        order: 2;
+    }
+
+}
+
+.symptoms{
     width: auto;
-    height:80vh;
+    min-height:80vh;
     background-color: violet;
 }
 
-.sympsec3 table{
+.symptoms table{
     border: 1px solid black;
-    width: 60%;
-    margin : 0 auto;
+    min-width: 60%;
+    max-width: 80%;
+    margin : 2em auto ;
     border-collapse: collapse;
 }
 
-.sympsec3 th{
+.symptoms th{
     border: 5px solid black;
     text-align: center;
     height:  60px;
     font-size: 25px;
 }
 
-.sympsec3 td{
+.symptoms td{
     border: 5px solid black;
     text-align: center;
     height: 60px;
 }
 
-.faqsec4{
-    height: 100vh;
+.faqs{
+    min-height: 100vh;
 }
 
-.faqsec4 section{
-    width: 80%;
+.faqs section{
+    max-width: 80%;
     margin: 10px auto;
     border: 1px solid violet;
-    border-radius: 5px;
+    border-radius: 3px;
 }
-.faqitem{
-    width: 90%;
-    margin: 30px auto;
+.faqsitem{
+    width: 85%;
+    margin: 2.5rem auto;
     border: 1px solid violet;
     border-radius: 5px;
 }
 
-.faqitem h3{
+.faqsitem h3{
     text-align: center;
-    
+    margin-top:1rem;   
+}
+.faqsitem p{
+    padding:1.5rem;
 }
 
-.ytsec5{
-    height: 70vh;
 
+.ytsec5{
+    min-height: 80vh;
 }
 .embedVideo{
     width: fit-content;
-    margin: 30px auto;
+    margin: 2.5rem auto 5rem auto;
+}
+
+.embedVideo iframe{
+     min-width: 45rem;
+    min-height: 28rem;
 }
 
 footer{
-    height: 20vh;
+    min-height: 20vh;
     background-color: violet;
 
 }
