@@ -1,11 +1,11 @@
 *{
     margin: 0px;
     padding: 0px;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: azure;
 }
 
@@ -13,6 +13,8 @@ body{
     background-color:blueviolet ;
     min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .topnav{
@@ -28,7 +30,7 @@ body{
 }
 
 .topnav ul li{
-    padding:3rem 2rem;
+    padding:2rem 2rem;
 }
 .topnav ul li a{
     text-decoration: none;
@@ -45,9 +47,16 @@ body{
 }
 
 
+.home-content-container{
+    display: flex;
+    flex:1;
+}
+
 .home-content{  
     max-width: max-content;
-    margin: 4rem auto 0 auto;
+    /* margin: 4rem auto 0 auto; */
+    margin: auto;
+    align-content: center;
 }
 
 .quote1{
@@ -89,7 +98,7 @@ body{
 
 @media (max-width:1250px){
     .home-content{
-        margin: 3.5rem 5rem 0rem 5rem;
+        margin: 3rem 5rem 0rem 5rem;
     }
     .covid-image-container{
         width: 100%;
@@ -233,28 +242,68 @@ body{
     padding:1.5rem;
 }
 
-
 .ytsec5{
     min-height: 80vh;
-}
-.embedVideo{
-    width: fit-content;
-    margin: 2.5rem auto 5rem auto;
+    margin-top: 3rem;
 }
 
-.embedVideo iframe{
-     min-width: 45rem;
-    min-height: 28rem;
+.iframe-container{
+    position: relative;
+    max-width:65%;
+    margin: 3rem auto;
+    padding-bottom: 40.25%; /*16:9 ratio*/
+    height:0;
+    /* margin: 2.5rem auto 5rem auto; */
 }
 
-footer{
+.iframe-container iframe{
+     position:absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+}
+
+.footer{
     min-height: 20vh;
-    background-color: violet;
-
+    background-color: #172c74;
 }
 
-footer p{
-    text-align: center;
-    font-size: 30px;
-    padding-top: 60px;
+.social-media-links{
+    width: 100%;
 }
+
+.social-media-links ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+}
+
+.social-media-links ul li{
+    margin: 1.3rem;
+}
+
+.build-info{
+    margin-top: 1rem;
+}
+
+.build-info ul{
+    display: flex;
+    justify-content: center;
+}
+.build-info ul :first-child{
+    list-style-type: none ;
+}
+
+.build-info ul li{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    color: aliceblue;
+}
+
+.build-info ul li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
